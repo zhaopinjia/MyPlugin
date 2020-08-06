@@ -1,0 +1,12 @@
+name: ISCROAdmin
+main: com.zpj2008.myplugin.MyPlugin
+version: 666.66.6
+commands:
+  banme:
+    description: 输入指令ban自己
+  tps:
+    description: nope
+  kick-pl:
+    description: nope
+  ess:
+    description: nope
