@@ -1,16 +1,37 @@
 name: ISCROAdmin
-main: com.zpj2008.myplugin.MyPlugin
-version: 10.0-DEV-ONLY
+main: com.zpj2008.iscroadmin.MyPlugin
+version: PRE-1.12.2.11.2.3
 commands:
   banme:
     description: 输入指令ban自己
-  tps:
-    description: nope
+  setop:
+    description: 设置一位玩家为OP
   kick-pl:
-    description: nope
-  ess:
-    description: nope
+    description: 踢出玩家
+  stops:
+    description: 停止服务器运行
   sreport:
     description: 向服务器反馈问题
   /health:
     description: 恢复血量
+  bedxyz:
+    description: 查找床位置
+  rubbish:
+    description: Gui清理垃圾
+  /hungry:
+    description: 饥饿度恢复
+  permissions:
+    iscroadmin.*:
+      description: ISCROAdmin服务器特色插件所有指令权限！
+      children:
+        iscroadmin.commands.setop: true
+        iscroadmin.commands.kickplayer: true
+    iscroadmin.commands.setop:
+      description: /setop权限
+      default: op
+    iscroadmin.commands.kickplayer:
+      description: /kick-pl权限
+      default: op
+    iscroadmin.commands.stopserver:
+      description: /stops权限
+      default: op
